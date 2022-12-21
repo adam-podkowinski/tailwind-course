@@ -1,9 +1,10 @@
-export const App = () => (
-  <div
-    class={
-      "grid h-screen place-items-center bg-slate-900 px-3 text-5xl font-semibold text-blue-400"
-    }
-  >
-    <p class={"hover:text-blue-300"}>VITE + PREACT + TYPESCRIPT + TAILWIND</p>
+import { FunctionalComponent } from "preact";
+import Destinations from "./components/Destinations";
+import Hero from "./components/Hero";
+
+export const App: FunctionalComponent = () => (
+  <div class={"min-h-screen bg-gray-300"}>
+    <Hero />
+    <Destinations />
   </div>
 );
